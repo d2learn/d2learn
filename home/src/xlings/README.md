@@ -53,7 +53,7 @@ footer: false
 
 ## 快速安装
 
-> 选择对应平台, 在命令行窗口(windows对应**PowerShell**)运行一键安装命令
+> 打开命令行窗口(windows对应**PowerShell**), 然后选择对应平台, 复制并运行一键安装命令
 
 ::: code-tabs#shell
 

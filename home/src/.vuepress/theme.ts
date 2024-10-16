@@ -15,6 +15,8 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
+  externalLinkIcon: false,
+
   logo: "/logo.png",
 
   repo: "d2learn",
@@ -51,6 +53,7 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
+    /*
     comment: {
       provider: "Giscus",
       repo: "vuepress-theme-hope/giscus-discussions",
@@ -58,6 +61,7 @@ export default hopeTheme({
       category: "Announcements",
       categoryId: "DIC_kwDOG_Pt2M4COD69",
     },
+    */
 
     components: {
       components: ["Badge", "VPCard"],

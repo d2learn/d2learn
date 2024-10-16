@@ -13,5 +13,10 @@ export default defineUserConfig({
 
   theme,
 
+  // for display external-img (network)
+  head: [
+    ['meta', { name: 'referrer', content: 'no-referrer' }]
+  ],
+
   // shouldPrefetch: false,
 });
