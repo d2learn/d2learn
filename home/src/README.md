@@ -33,11 +33,13 @@ footer: false
   <div class="responsive-x-cube-container" >
     <ResponsiveXCube :offsetX="computedOffsetX" :offsetY="computedOffsetY" :cubeColor="cubeColor" />
   </div>
-</ClientOnly>
 
 ## 视频
 
-<BilibiliVideoGallery :videos="videoList" />
+  <BilibiliVideoGallery :videos="videoList" />
+
+</ClientOnly>
+
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
@@ -52,11 +54,11 @@ const videoList = ref([
 const props = defineProps({
   offsetXRatio: {
     type: Number,
-    default: -0.225
+    default: -0.22
   },
   offsetYRatio: {
     type: Number,
-    default: -0.62
+    default: -0.48
   },
   cubeColor: {
     type: String,
@@ -76,7 +78,7 @@ const computedOffsetX = computed(() => {
 });
 
 const computedOffsetY = computed(() => {
-  return isSmallScreen.value ? windowSize.value.height * -0.85 : windowSize.value.height * props.offsetYRatio;
+  return isSmallScreen.value ? windowSize.value.height * -0.65 : windowSize.value.height * props.offsetYRatio;
 });
 
 const updateWindowSize = () => {
@@ -98,11 +100,8 @@ onUnmounted(() => {
 
 <style scoped>
 .responsive-x-cube-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  height: 0;
+  overflow: visible;
   pointer-events: none;
   z-index: 10;
 }
