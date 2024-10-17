@@ -28,9 +28,12 @@ actions:
 
 footer: false
 ---
-<div class="responsive-x-cube-container" >
-  <ResponsiveXCube :offsetX="computedOffsetX" :offsetY="computedOffsetY" :cubeColor="cubeColor" />
-</div>
+
+<ClientOnly>
+  <div class="responsive-x-cube-container" >
+    <ResponsiveXCube :offsetX="computedOffsetX" :offsetY="computedOffsetY" :cubeColor="cubeColor" />
+  </div>
+</ClientOnly>
 
 ## 视频
 
