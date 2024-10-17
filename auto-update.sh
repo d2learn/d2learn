@@ -11,9 +11,9 @@ echo "----------------------------------------------------"
 echo "--------- D2Learn - $current_time ---------"
 echo "----------------------------------------------------"
 
-#echo "--------- Sync Courses ---------"
-#cd $SCRIPT_DIR/courses
-#bash auto-update.sh
+echo "--------- Sync Courses ---------"
+cd $SCRIPT_DIR/courses
+bash auto-update.sh
 
 echo "--------- Sync Home ---------"
 git pull origin main
