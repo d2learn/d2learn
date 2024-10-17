@@ -16,6 +16,7 @@ cd $SCRIPT_DIR/courses
 bash auto-update.sh
 
 echo "--------- Sync Home ---------"
+cd $SCRIPT_DIR
 git pull origin main
 #cd $SCRIPT_DIR/home
 #npm run docs:build
