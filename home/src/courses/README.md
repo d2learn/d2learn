@@ -37,17 +37,21 @@ features:
 footer: false
 ---
 
-<BilibiliVideoGallery :videos="courseVideoList" />
+<ClientOnly>
+
+  <BilibiliVideoGallery :videos="courseVideoList" />
 
 ---
 
-<d2ds/>
+  <d2ds/>
 
 ---
 
-<d2python/>
+  <d2python/>
 
 ---
+
+</ClientOnly>
 
 <script setup>
 import { ref } from 'vue'
