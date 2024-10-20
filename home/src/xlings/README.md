@@ -23,30 +23,37 @@ features:
   - title: 多编程语言支持
     icon: fa-solid fa-code
     details: 支持运行Python、C、C++代码, 自动安装依赖
+    link: ../docs/xlings/chapter_2/chapter_2_3.md
 
   - title: 软件安装和环境配置
     icon: fa-solid fa-gear
     details: 通过install命令安装常用软件, 并支持一键配置开发环境
+    link: ../docs/xlings/chapter_2/chapter_2_2.md
 
   - title: 课程&教学项目搭建
     icon: fa-solid fa-graduation-cap
     details: 快速构建[Book + Code + Video + X]结构的课程
+    link: ../docs/xlings/chapter_3/chapter_3_1.md
 
   - title: AI代码提示
     icon: fa-solid fa-robot
     details: 可自定义后端大模型和AI背景, 对代码错误进行实时提示
+    link: ../docs/xlings/chapter_4.md
 
   - title: 代码实时检测
     icon: fa-solid fa-spinner
     details: 对目标文件中的代码改动实时检测&编译运行显示结果
+    link: ../docs/xlings/chapter_2/chapter_2_3.md
 
   - title: drepo项目管理
     icon: fa-solid fa-cube
     details: 提供统一的课程项目管理, 一键下载课程项目并自动安装项目依赖
+    link: ../docs/xlings/chapter_2/chapter_2_4.md
 
   - title: markdown在线书籍
     icon: fa-solid fa-book
     details: 使用mdbook + github-pages快速搭建在线书籍
+    link: ../docs/book-template/README.md
 
 footer: false
 ---
