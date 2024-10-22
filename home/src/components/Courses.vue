@@ -43,16 +43,18 @@
     <Teleport to="body">
       <div v-if="selectedVideo" class="modal" @click="closeModal">
         <div class="modal-content" @click.stop>
-          <iframe
-            :src="`//player.bilibili.com/player.html?bvid=${selectedVideo.bvid}&page=1&autoplay=1&danmaku=0`"
-            :width="modalWidth"
-            :height="modalHeight"
-            scrolling="no"
-            border="0"
-            frameborder="no"
-            framespacing="0"
-            allowfullscreen="true"
-          ></iframe>
+          <div class="video-open-wrapper">
+            <iframe
+              :src="`//player.bilibili.com/player.html?bvid=${selectedVideo.bvid}&page=1&autoplay=1&danmaku=0`"
+              :width="modalWidth"
+              :height="modalHeight"
+              scrolling="no"
+              border="0"
+              frameborder="no"
+              framespacing="0"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
         </div>
       </div>
     </Teleport>
@@ -263,6 +265,25 @@ const closeModal = () => {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90vw;
+  max-width: 800px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-open-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 宽高比 */
+  width: 100%;
+}
+
+.video-open-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -281,6 +302,10 @@ const closeModal = () => {
   .video-wrapper,
   .course-highlights {
     width: 100% !important;
+  }
+
+  .modal-content {
+    padding: 10px;
   }
 }
 </style>
